@@ -2,6 +2,8 @@ import Card from "@/components/Card";
 import { FiAlertCircle, FiList, FiClock } from "react-icons/fi";
 
 export default function Home() {
+  const Tickets = 16;
+  const Tasks = 15;
   const openTickets = 4;
   const pendingTasks = 7;
   const latestUpdate = "System patch scheduled";
@@ -40,13 +42,13 @@ export default function Home() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 mt-10">
           <Card
-            title="Open Tickets"
-            value={openTickets}
+            title="All Tickets"
+            value={Tickets}
             icon={<FiAlertCircle />}
           />
           <Card
-            title="Pending Tasks"
-            value={pendingTasks}
+            title="All Tasks"
+            value={Tasks}
             icon={<FiList />}
           />
         </div>
